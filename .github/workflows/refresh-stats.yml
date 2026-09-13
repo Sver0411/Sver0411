@@ -17,17 +17,24 @@ jobs:
 
     steps:
       - name: Render Fuji and CRT cards
+        if: ${{ secrets.PIXEL_PROFILE_TOKEN != '' }}
         uses: Sver0411/pixel-profile/action@1487cde5a2fc9478c58ad0118384b69a1c4d1361
         with:
+          github_token: ${{ secrets.PIXEL_PROFILE_TOKEN }}
           outputs: |
             dist/github-stats?username=Sver0411&screen_effect=false&theme=fuji&dithering=true&hide=avatar
           crt_outputs: |
-            dist/github-stats-crt?username=Sver0411
+            dist/github-stats-crt?username=Sver0411&include_all_commits=true
 
       - name: Publish cards to output branch
+        if: ${{ secrets.PIXEL_PROFILE_TOKEN != '' }}
         uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Explain skipped refresh
+        if: ${{ secrets.PIXEL_PROFILE_TOKEN == '' }}
+        run: echo "Keeping the last generated cards; PIXEL_PROFILE_TOKEN is not configured."
