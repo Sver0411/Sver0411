@@ -1,4 +1,4 @@
-name: Refresh pixel dashboard
+name: Generate pixel profile
 
 on:
   workflow_dispatch:
@@ -11,21 +11,23 @@ permissions:
   contents: write
 
 jobs:
-  refresh:
+  generate:
     runs-on: ubuntu-latest
-    steps:
-      - name: Check out profile
-        uses: actions/checkout@v4
+    timeout-minutes: 5
 
-      - name: Generate pixel stats
+    steps:
+      - name: Render Fuji and CRT cards
+        uses: LuciNyan/pixel-profile/action@7a7937a63421dd6eba82aaae31f73e85df8d9f94
+        with:
+          outputs: |
+            dist/github-stats?username=Sver0411&screen_effect=false&theme=fuji&dithering=true&hide=avatar
+          crt_outputs: |
+            dist/github-stats-crt?username=Sver0411&include_all_commits=true
+
+      - name: Publish cards to output branch
+        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
+        with:
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/generate_stats.py
-
-      - name: Commit updated card
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/github-stats.svg
-          git diff --cached --quiet || git commit -m "chore: refresh pixel stats"
-          git push
