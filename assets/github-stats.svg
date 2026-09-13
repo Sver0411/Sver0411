@@ -29,11 +29,11 @@
   <text x="48" y="286" class="label">CALLSIGN</text>
   <text x="48" y="317" class="value">Sver0411</text>
   <text x="48" y="344" class="small">INDEPENDENT BUILDER</text>
-  <text x="48" y="367" fill="#66ff9a" font-size="13">LV.27  •  BUILD MODE</text>
+  <text x="48" y="367" fill="#66ff9a" font-size="13">LV.29  •  BUILD MODE</text>
 
   <path d="M232 82V354" stroke="#244c7c" stroke-width="2"/>
   <text x="268" y="112" class="label">PUBLIC REPOS</text>
-  <text x="268" y="146" class="value">10</text>
+  <text x="268" y="146" class="value">11</text>
   <text x="405" y="112" class="label">STARS</text>
   <text x="405" y="146" class="value">07</text>
   <text x="268" y="204" class="label">FOLLOWERS</text>
@@ -46,5 +46,5 @@
 
   <path d="M470 82V354" stroke="#244c7c" stroke-width="2"/>
   <text x="505" y="112" class="label">LANGUAGE LOADOUT</text>
-  <text x="505" y="188" class="small">TypeScript</text><text x="815" y="188" class="small pct">47%</text><rect x="505" y="198" width="285" height="10" fill="#172b50"/><rect x="505" y="198" width="133" height="10" fill="#59f6ff"/><text x="505" y="231" class="small">Python</text><text x="815" y="231" class="small pct">22%</text><rect x="505" y="241" width="285" height="10" fill="#172b50"/><rect x="505" y="241" width="64" height="10" fill="#a879ff"/><text x="505" y="274" class="small">CSS</text><text x="815" y="274" class="small pct">19%</text><rect x="505" y="284" width="285" height="10" fill="#172b50"/><rect x="505" y="284" width="53" height="10" fill="#ff6bd6"/><text x="505" y="317" class="small">JavaScript</text><text x="815" y="317" class="small pct">12%</text><rect x="505" y="327" width="285" height="10" fill="#172b50"/><rect x="505" y="327" width="34" height="10" fill="#ffd166"/>
+  <text x="505" y="188" class="small">TypeScript</text><text x="815" y="188" class="small pct">43%</text><rect x="505" y="198" width="285" height="10" fill="#172b50"/><rect x="505" y="198" width="124" height="10" fill="#59f6ff"/><text x="505" y="231" class="small">Python</text><text x="815" y="231" class="small pct">28%</text><rect x="505" y="241" width="285" height="10" fill="#172b50"/><rect x="505" y="241" width="80" height="10" fill="#a879ff"/><text x="505" y="274" class="small">CSS</text><text x="815" y="274" class="small pct">17%</text><rect x="505" y="284" width="285" height="10" fill="#172b50"/><rect x="505" y="284" width="49" height="10" fill="#ff6bd6"/><text x="505" y="317" class="small">JavaScript</text><text x="815" y="317" class="small pct">11%</text><rect x="505" y="327" width="285" height="10" fill="#172b50"/><rect x="505" y="327" width="32" height="10" fill="#ffd166"/>
 </svg>
