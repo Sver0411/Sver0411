@@ -17,12 +17,12 @@ jobs:
 
     steps:
       - name: Render Fuji and CRT cards
-        uses: LuciNyan/pixel-profile/action@7a7937a63421dd6eba82aaae31f73e85df8d9f94
+        uses: Sver0411/pixel-profile/action@1487cde5a2fc9478c58ad0118384b69a1c4d1361
         with:
           outputs: |
             dist/github-stats?username=Sver0411&screen_effect=false&theme=fuji&dithering=true&hide=avatar
           crt_outputs: |
-            dist/github-stats-crt?username=Sver0411&include_all_commits=true
+            dist/github-stats-crt?username=Sver0411
 
       - name: Publish cards to output branch
         uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
