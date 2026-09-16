@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png">
-  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png?v=20260916">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20260916">
+  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20260916">
 </picture>
 
 <div align="center">
