@@ -6,7 +6,9 @@
 
 <div align="center">
   <br>
-  <code>AI SYSTEMS</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>EDGE INTELLIGENCE</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>TOOLS THAT SHIP</code>
+  <code>EDGE AI</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>RELIABLE IOT</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>AGENT SYSTEMS</code>
+  <br><br>
+  Building reliable edge intelligence and agent systems for the real world.
   <br><br>
   <a href="https://twclab.top">◈ ENTER WEBSITE</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
@@ -19,14 +21,15 @@
 
 | Quest | Mission | Stack |
 | :--- | :--- | :--- |
-| [**ContextGit**](https://github.com/Sver0411/ContextGit) | Portable context and handoff infrastructure for coding agents | `Python` `Git` `Agents` |
-| [**RAG Research Platform**](https://github.com/Sver0411/RAG-research-platform) | Evidence-grounded knowledge-base research | `Python` `RAG` `Full-stack` |
-| [**LinguaStep**](https://github.com/Sver0411/LinguaStep-GradPrep) | A Japanese and English learning companion | `TypeScript` `EdTech` |
-| [**ScrollPilot**](https://github.com/Sver0411/ScrollPilot) | Natural / standard scrolling switcher for macOS | `Swift` `macOS` |
-| [**Daily Push**](https://github.com/Sver0411/daily-push) | Course schedule and weather notifications | `Python` `Docker` |
+| [**Smart Agriculture Edge AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | Multi-node sensing, local decisions, fault tolerance and safe actuator control | `Python` `Edge AI` `IoT` |
+| [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | Lightweight sensor-health monitoring for embedded IoT nodes | `C` `Embedded` `IoT` |
+| [**TinyEdgeBench**](https://github.com/Sver0411/TinyEdgeBench) | Benchmarking tiny ML models on ESP32-class devices | `Python` `TinyML` `ESP32` |
+| [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling for resource-constrained nodes | `Python` `ESP32-S3` `Research` |
+| [**ContextGit**](https://github.com/Sver0411/ContextGit) | Versioning and handoff infrastructure for coding-agent context | `Python` `Git` `Agents` |
+| [**GradJP Skills**](https://github.com/Sver0411/GradJP-Skills) | Evidence-first CLI skills for Japanese graduate admissions | `Python` `CLI` `Agents` |
 
 </details>
 
 <div align="center">
-  <sub>PLAYER SVER0411 · INDEPENDENT BUILDER · PRESS START TO EXPLORE</sub>
+  <sub>PLAYER SVER0411 · EDGE AI BUILDER · PRESS START TO EXPLORE</sub>
 </div>
