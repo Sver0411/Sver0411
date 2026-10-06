@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png?v=20261006031657">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006031657">
-  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006031657">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png?v=20261006102210">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006102210">
+  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006102210">
 </picture>
 
 <div align="center"><sub>GitHub stats show public activity.</sub></div>
