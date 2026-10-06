@@ -14,22 +14,33 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    env:
-      PIXEL_PROFILE_TOKEN: ${{ secrets.PIXEL_PROFILE_TOKEN }}
 
     steps:
+      - name: Check out profile
+        uses: actions/checkout@v4
+
       - name: Render Fuji and CRT cards
-        if: ${{ env.PIXEL_PROFILE_TOKEN != '' }}
-        uses: Sver0411/pixel-profile/action@1487cde5a2fc9478c58ad0118384b69a1c4d1361
+        uses: Sver0411/pixel-profile/action@140b1658affd86a40120ffac3e7f430f412a03b4
+        env:
+          PUBLIC_ONLY_STATS: "true"
         with:
-          github_token: ${{ env.PIXEL_PROFILE_TOKEN }}
+          github_token: ${{ github.token }}
           outputs: |
-            dist/github-stats?username=Sver0411&screen_effect=false&theme=fuji&dithering=true&hide=avatar
+            dist/github-stats?username=Sver0411&screen_effect=false&theme=fuji&dithering=true&hide=avatar&include_all_commits=true
           crt_outputs: |
             dist/github-stats-crt?username=Sver0411&include_all_commits=true
 
+      - name: Verify generated cards
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          for filename in ("github-stats.png", "github-stats-crt.png"):
+              data = (Path("dist") / filename).read_bytes()
+              assert data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) > 50_000, filename
+          PY
+
       - name: Publish cards to output branch
-        if: ${{ env.PIXEL_PROFILE_TOKEN != '' }}
         uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
         with:
           target_branch: output
@@ -37,6 +48,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Explain skipped refresh
-        if: ${{ env.PIXEL_PROFILE_TOKEN == '' }}
-        run: echo "Keeping the last generated cards; PIXEL_PROFILE_TOKEN is not configured."
+      - name: Refresh README image cache key
+        run: |
+          version=$(date -u +%Y%m%d%H%M%S)
+          sed -i -E "s/(\.png\?v=)[0-9]+/\1${version}/g" README.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh pixel card URLs"
+            git push origin main
+          fi

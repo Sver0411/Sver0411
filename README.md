@@ -1,8 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png?v=20260923">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20260923">
-  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20260923">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats-crt.png?v=20261006">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006">
+  <img width="100%" alt="Sver's pixel-art GitHub stats" src="https://raw.githubusercontent.com/Sver0411/Sver0411/output/github-stats.png?v=20261006">
 </picture>
+
+<div align="center"><sub>GitHub stats show public activity.</sub></div>
 
 <div align="center">
   <br>
@@ -22,7 +24,7 @@
 | Quest | Mission | Stack |
 | :--- | :--- | :--- |
 | [**Smart Agriculture Edge AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | Multi-node sensing, local decisions, fault tolerance and safe actuator control | `Python` `Edge AI` `IoT` |
-| [**EdgeFaultLab**](https://github.com/Sver0411/EdgeFaultLab) | Deterministic fault injection and resilience testing for distributed edge systems | `Python` `Fault Injection` `IoT` |
+| [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | Event-aware redundancy tested on ESP32-S3 and E220 hardware | `Python` `ESP32-S3` `LoRa` |
 | [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling for resource-constrained nodes | `Python` `ESP32-S3` `Research` |
 | [**ContextGit**](https://github.com/Sver0411/ContextGit) | Versioning and handoff infrastructure for coding-agent context | `Python` `Git` `Agents` |
 | [**OpportunityRadar**](https://github.com/Sver0411/OpportunityRadar) | Finds and verifies timely jobs, research, competitions and open-source opportunities | `Python` `Research` `Agents` |
@@ -37,7 +39,9 @@
 | :--- | :--- |
 | [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | Embedded sensor-health monitoring and anomaly detection |
 | [**TinyEdgeBench**](https://github.com/Sver0411/TinyEdgeBench) | Lightweight TinyML benchmarking for ESP32-class devices |
+| [**EdgeFaultLab**](https://github.com/Sver0411/EdgeFaultLab) | Deterministic fault injection for distributed edge systems |
 | [**GradJP Skills**](https://github.com/Sver0411/GradJP-Skills) | Evidence-first agent skills for Japanese graduate admissions |
+| [**ConvertBox**](https://github.com/Sver0411/ConvertBox) | Browser-local image conversion between JPG, PNG and WebP |
 
 </details>
 
