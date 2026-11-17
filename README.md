@@ -18,29 +18,40 @@
   <br><br>
 </div>
 
-**▶ SELECT QUEST**
+**★ FEATURED FLAGSHIPS (TOP 6 PINNED)**
+
+| Flagship | Highlight | Tech Stack |
+| --- | --- | --- |
+| [**Smart-Agriculture-Edge-AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | 7-role, 2-zone edge AI & E220 LoRa system with keyed MAC32 auth, dual-gateway failover and local autonomy | `Python` `C11` `ESP32-S3` `LoRa` |
+| [**IoT-MPQUIC-Scheduler**](https://github.com/Sver0411/IoT-MPQUIC-Scheduler) | Deadline- and freshness-aware multipath QUIC (XQUIC) scheduling over dual UDP paths | `C` `Python` `MPQUIC` `Networking` |
+| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | Greenhouse digital twin & CPS platform with trust-aware EKF and [**Live 3D WebGL Viewer**](https://sver0411.github.io/AgriTwin-CPS/) | `Python` `TypeScript` `Three.js` `CPS` |
+| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | MobileNetV2 INT8 crop-leaf anomaly triage on ESP32-S3 N16R8 (ESP-DL) with USB Web console | `PyTorch` `ESP-IDF` `C++` `INT8` |
+| [**OpportunityHandbook**](https://github.com/Sver0411/OpportunityHandbook) | Comprehensive decision handbook for university, research, competitions, and career transitions (50+ ★) | `Python` `JavaScript` `Handbook` |
+| [**LinguaStep-GradPrep**](https://github.com/Sver0411/LinguaStep-GradPrep) | Local-first bilingual (Japanese + English) JLPT/TOEIC study web app with FSRS-6 & neural TTS | `TypeScript` `Next.js` `FSRS-6` |
+
+**▶ IOT, EMBEDDED & EDGE AI QUESTS**
 
 | Quest | Mission | Stack |
 | --- | --- | --- |
 | [**TAIS**](https://github.com/Sver0411/TAIS) | Trust-aware sampling, sensor fault diagnosis and selective transmission | `Python` `C11` `Research` |
-| [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | Event-aware redundancy tested on ESP32-S3 and E220 hardware | `Python` `ESP32-S3` `LoRa` |
-| [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling for resource-constrained nodes | `Python` `ESP32-S3` `Research` |
-| [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | Embedded sensor-health monitoring and anomaly detection | `Python` `C` `IoT` |
-| [**Smart Agriculture Edge AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | Multi-node sensing, local decisions, fault tolerance and safe actuator control | `Python` `Edge AI` `IoT` |
-| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | Greenhouse digital twin, state estimation, constrained control and fault experiments | `Python` `CPS` `Simulation` |
-| [**TinyEdgeBench**](https://github.com/Sver0411/TinyEdgeBench) | Lightweight TinyML benchmarking for ESP32-class devices | `Python` `TinyML` `Benchmarking` |
-| [**EdgeFaultLab**](https://github.com/Sver0411/EdgeFaultLab) | Deterministic fault injection for distributed edge systems | `Python` `Testing` `Reliability` |
-| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | Lightweight crop-image anomaly screening and INT8 inference | `Python` `PyTorch` `Edge AI` |
+| [**NetAdapt-IoT**](https://github.com/Sver0411/NetAdapt-IoT) | Multi-flow IoT gateway scheduling balancing Age of Information (AoI), deadlines and fairness | `Python` `ESP32-S3` `PlatformIO` |
+| [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | Event-aware redundancy tested on ESP32-S3 and E220 Sub-GHz LoRa hardware | `Python` `ESP32-S3` `LoRa` |
+| [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling with two-sided CUSUM slow-drift detection on ESP32-S3 | `Python` `C` `ESP32-S3` |
+| [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | Zero-allocation C11 embedded sensor-health monitoring with time-aware slope & CUSUM | `C11` `Python` `IoT` |
+| [**TinyEdgeBench**](https://github.com/Sver0411/TinyEdgeBench) | Lightweight TinyML benchmarking (FP32 vs. scalar INT8 vs. ESP-NN SIMD INT8) on ESP32-S3 | `C` `Python` `TinyML` |
+| [**EdgeSense-AIoT**](https://github.com/Sver0411/EdgeSense-AIoT) | Cross-channel and cross-node sensor fault vs. environmental event fusion | `C` `Python` `ESP32-S3` |
+| [**EdgeFaultLab**](https://github.com/Sver0411/EdgeFaultLab) | Deterministic semantic fault injection proxy for distributed edge/IoT systems | `Python` `Testing` `Reliability` |
 
-**◇ OPEN SIDE QUESTS**
+**◇ AI AGENTS & WEB WORKBENCHES**
 
 | Project | Focus |
 | --- | --- |
-| [**OpportunityHandbook**](https://github.com/Sver0411/OpportunityHandbook) | Practical guidance for education, careers, research and life decisions |
 | [**OpportunityRadar**](https://github.com/Sver0411/OpportunityRadar) | Finds and verifies timely jobs, research, competitions and open-source opportunities |
+| [**OmniTest**](https://github.com/Sver0411/OmniTest) | Pluggable automation testing platform for API, Web and CLI workflows |
 | [**ContextGit**](https://github.com/Sver0411/ContextGit) | Versioned context, semantic merging and handoffs for coding agents |
 | [**GradJP Skills**](https://github.com/Sver0411/GradJP-Skills) | Evidence-first agent skills for Japanese graduate admissions |
-| [**ConvertBox**](https://github.com/Sver0411/ConvertBox) | Browser-local image conversion between JPG, PNG and WebP |
+| [**Pocket-Museum**](https://github.com/Sver0411/Pocket-Museum) | Interactive retro handheld museum with realistic system screens and GBA emulation |
+| [**ConvertBox**](https://github.com/Sver0411/ConvertBox) | Browser-local image conversion workbench for JPG, PNG and WebP |
 
 <div align="center">
   <sub>PLAYER SVER0411 · SYSTEMS & AGENT BUILDER · PRESS START TO EXPLORE</sub>
