@@ -29,11 +29,20 @@
 | [**OpportunityHandbook**](https://github.com/Sver0411/OpportunityHandbook) | Comprehensive decision handbook for university, research, competitions, and career transitions (50+ ★) | `Python` `JavaScript` `Handbook` |
 | [**LinguaStep-GradPrep**](https://github.com/Sver0411/LinguaStep-GradPrep) | Local-first bilingual (Japanese + English) JLPT/TOEIC study web app with FSRS-6 & neural TTS | `TypeScript` `Next.js` `FSRS-6` |
 
+**◈ FOUR-LAYER AIoT RESEARCH STACK**
+
+```mermaid
+flowchart LR
+    L1["L1 · Reliable Sensing<br/>SensorTrust (C11)"] --> L2["L2 · Adaptive Observation<br/>AdaptiveSense · TAIS"]
+    L2 --> L3["L3 · Freshness & Lossy Links<br/>EventGuard-LoRa · NetAdapt-IoT<br/>IoT-MPQUIC-Scheduler"]
+    L3 --> L4["L4 · Resilience & CPS Validation<br/>EdgeFaultLab · TinyEdgeBench<br/>Smart-Agriculture-Edge-AI · AgriTwin-CPS"]
+```
+
 **▶ IOT, EMBEDDED & EDGE AI QUESTS**
 
 | Quest | Mission | Stack |
 | --- | --- | --- |
-| [**TAIS**](https://github.com/Sver0411/TAIS) | Trust-aware sampling, sensor fault diagnosis and selective transmission | `Python` `C11` `Research` |
+| [**TAIS**](https://github.com/Sver0411/TAIS) | Trust-aware closed-loop sampling, AoI-bounded transmission & regime boundary analysis | `Python` `C11` `Research` |
 | [**NetAdapt-IoT**](https://github.com/Sver0411/NetAdapt-IoT) | Multi-flow IoT gateway scheduling balancing Age of Information (AoI), deadlines and fairness | `Python` `ESP32-S3` `PlatformIO` |
 | [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | Event-aware redundancy tested on ESP32-S3 and E220 Sub-GHz LoRa hardware | `Python` `ESP32-S3` `LoRa` |
 | [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling with two-sided CUSUM slow-drift detection on ESP32-S3 | `Python` `C` `ESP32-S3` |
