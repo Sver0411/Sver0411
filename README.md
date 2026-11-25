@@ -18,16 +18,19 @@
   <br><br>
 </div>
 
-**★ FEATURED FLAGSHIPS (TOP 6 PINNED)**
+**★ FEATURED FLAGSHIPS (CORE 6 AIoT RESEARCH STACK)**
 
-| Flagship | Highlight | Tech Stack |
+| Flagship | Layer & Highlight | Tech Stack |
 | --- | --- | --- |
-| [**Smart-Agriculture-Edge-AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | 7-role, 2-zone edge AI & E220 LoRa system with keyed MAC32 auth, dual-gateway failover and local autonomy | `Python` `C11` `ESP32-S3` `LoRa` |
-| [**IoT-MPQUIC-Scheduler**](https://github.com/Sver0411/IoT-MPQUIC-Scheduler) | Deadline- and freshness-aware multipath QUIC (XQUIC) scheduling over dual UDP paths | `C` `Python` `MPQUIC` `Networking` |
-| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | Greenhouse digital twin & CPS platform with trust-aware EKF and [**Live 3D WebGL Viewer**](https://sver0411.github.io/AgriTwin-CPS/) | `Python` `TypeScript` `Three.js` `CPS` |
-| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | MobileNetV2 INT8 crop-leaf anomaly triage on ESP32-S3 N16R8 (ESP-DL) with USB Web console | `PyTorch` `ESP-IDF` `C++` `INT8` |
-| [**OpportunityHandbook**](https://github.com/Sver0411/OpportunityHandbook) | Comprehensive decision handbook for university, research, competitions, and career transitions (50+ ★) | `Python` `JavaScript` `Handbook` |
-| [**LinguaStep-GradPrep**](https://github.com/Sver0411/LinguaStep-GradPrep) | Local-first bilingual (Japanese + English) JLPT/TOEIC study web app with FSRS-6 & neural TTS | `TypeScript` `Next.js` `FSRS-6` |
+| [**IoT-MPQUIC-Scheduler**](https://github.com/Sver0411/IoT-MPQUIC-Scheduler) | Deadline- and freshness-aware multipath QUIC (XQUIC) scheduling over dual UDP paths | `C` `Python` `MPQUIC` |
+| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | Greenhouse digital twin & CPS platform with trust-aware EKF and [**Live 3D WebGL Viewer**](https://sver0411.github.io/AgriTwin-CPS/) | `Python` `Three.js` `CPS` |
+| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | MobileNetV2 INT8 crop-leaf anomaly triage on ESP32-S3 N16R8 (ESP-DL) | `PyTorch` `ESP-IDF` `INT8` |
+| [**TAIS**](https://github.com/Sver0411/TAIS) | **L2 Hub** · Trust-aware closed-loop sampling, AoI-bounded transmission & regime boundary analysis | `Python` `C11` `Research` |
+| [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | **L1 Sensing** · Zero-allocation C11 embedded sensor-health monitoring with time-aware drift & CUSUM | `C11` `ESP-IDF` `IoT` |
+| [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | **L2 Sampling** · Change-aware adaptive sampling primitives and ESP32-S3 firmware | `Python` `C` `ESP32-S3` |
+| [**NetAdapt-IoT**](https://github.com/Sver0411/NetAdapt-IoT) | **L3 Freshness** · Multi-flow IoT scheduling balancing Age of Information (AoI), deadlines and fairness | `Python` `ESP32-S3` `QoS` |
+| [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | **L3 Lossy Links** · Event-aware redundancy evaluated on ESP32-S3 + E220 Sub-GHz LoRa hardware | `Python` `ESP32-S3` `LoRa` |
+| [**Smart-Agriculture-Edge-AI**](https://github.com/Sver0411/Smart-Agriculture-Edge-AI) | **L4 System** · 7-role, 2-zone edge AI & E220 LoRa system with MAC32 auth, dual-gateway failover & autonomy | `Python` `C11` `ESP32-S3` `LoRa` |
 
 **◈ FOUR-LAYER AIoT RESEARCH STACK**
 
@@ -55,6 +58,8 @@ flowchart LR
 
 | Project | Focus |
 | --- | --- |
+| [**OpportunityHandbook**](https://github.com/Sver0411/OpportunityHandbook) | Comprehensive decision handbook for university, research, competitions, and career transitions (50+ ★) |
+| [**LinguaStep-GradPrep**](https://github.com/Sver0411/LinguaStep-GradPrep) | Local-first bilingual (Japanese + English) JLPT/TOEIC study web app with FSRS-6 & neural TTS |
 | [**OpportunityRadar**](https://github.com/Sver0411/OpportunityRadar) | Finds and verifies timely jobs, research, competitions and open-source opportunities |
 | [**OmniTest**](https://github.com/Sver0411/OmniTest) | Pluggable automation testing platform for API, Web and CLI workflows |
 | [**ContextGit**](https://github.com/Sver0411/ContextGit) | Versioned context, semantic merging and handoffs for coding agents |
