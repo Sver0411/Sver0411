@@ -18,14 +18,14 @@
   <br><br>
 </div>
 
-**★ FEATURED FLAGSHIPS (CORE 6 AIoT RESEARCH STACK)**
+**★ FEATURED FLAGSHIPS (AIoT & CPS RESEARCH STACK)**
 
 | Flagship | Layer & Highlight | Tech Stack |
 | --- | --- | --- |
-| [**IoT-MPQUIC-Scheduler**](https://github.com/Sver0411/IoT-MPQUIC-Scheduler) | Deadline- and freshness-aware multipath QUIC (XQUIC) scheduling over dual UDP paths | `C` `Python` `MPQUIC` |
-| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | Greenhouse digital twin & CPS platform with trust-aware EKF and [**Live 3D WebGL Viewer**](https://sver0411.github.io/AgriTwin-CPS/) | `Python` `Three.js` `CPS` |
-| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | MobileNetV2 INT8 crop-leaf anomaly triage on ESP32-S3 N16R8 (ESP-DL) | `PyTorch` `ESP-IDF` `INT8` |
-| [**TAIS**](https://github.com/Sver0411/TAIS) | **L2 Hub** · Trust-aware closed-loop sampling, AoI-bounded transmission & regime boundary analysis | `Python` `C11` `Research` |
+| [**TAIS**](https://github.com/Sver0411/TAIS) | **L2 Hub** · Trust-aware closed-loop scheduling (`3.25 KB` RAM C11 on ESP32-S3), real E220 hardware-trace validation, and 54-mote spatial drift identifiability | `Python` `C11` `ESP32-S3` |
+| [**IoT-MPQUIC-Scheduler**](https://github.com/Sver0411/IoT-MPQUIC-Scheduler) | **L3 Transport** · Deadline- and freshness-aware multipath QUIC (XQUIC) scheduling over dual UDP paths | `C` `Python` `MPQUIC` |
+| [**AgriTwin-CPS**](https://github.com/Sver0411/AgriTwin-CPS) | **L4 CPS** · Greenhouse digital twin & CPS platform with trust-aware EKF and [**Live 3D WebGL Viewer**](https://sver0411.github.io/AgriTwin-CPS/) | `Python` `Three.js` `CPS` |
+| [**AgriTinyVision**](https://github.com/Sver0411/AgriTinyVision) | **L4 Edge AI** · MobileNetV2 INT8 crop-leaf anomaly triage on ESP32-S3 N16R8 (ESP-DL) | `PyTorch` `ESP-IDF` `INT8` |
 | [**SensorTrust**](https://github.com/Sver0411/SensorTrust) | **L1 Sensing** · Zero-allocation C11 embedded sensor-health monitoring with time-aware drift & CUSUM | `C11` `ESP-IDF` `IoT` |
 | [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | **L2 Sampling** · Change-aware adaptive sampling primitives and ESP32-S3 firmware | `Python` `C` `ESP32-S3` |
 | [**NetAdapt-IoT**](https://github.com/Sver0411/NetAdapt-IoT) | **L3 Freshness** · Multi-flow IoT scheduling balancing Age of Information (AoI), deadlines and fairness | `Python` `ESP32-S3` `QoS` |
@@ -41,11 +41,26 @@ flowchart LR
     L3 --> L4["L4 · Resilience & CPS Validation<br/>EdgeFaultLab · TinyEdgeBench<br/>Smart-Agriculture-Edge-AI · AgriTwin-CPS"]
 ```
 
+**◆ LATEST RESEARCH SNAPSHOT ([TAIS Phase 5.5 & 6](https://github.com/Sver0411/TAIS))**
+
+- **Real E220 Hardware Traces & C11 Embedded Port**: Replaying 24 ESP32-S3 + E220-400T22D Sub-GHz LoRa loss logs, `TAIS-JALC` lifts receiver F1 by **+7.74–9.46 pp** (`p_holm <= 0.0175`), cuts P95 finite AoI from **225.9 s → 46.4 s** with less RF airtime than `Fixed-20`, and compiles in zero-allocation C11 to **3.25 KB RAM / 7,643 B `.text`** on ESP32-S3 (`1.44 µs/step`, 27/27 bit-exact parity).
+- **54-Mote Real-World Validation & Spatial Drift Identifiability**: On 12 held-out days of the MIT Intel Berkeley 54-mote dataset (`76.4%` coverage, zero future interpolation), causal spatial k-NN reference cuts drift-induced false alarms by **−75.0%** (`88.3%` drift identified; `96.5%` on normal days), beats equal-cost `NullSpatial` negative control by **+45.4 pp** on common environmental ramps (`p_holm = 0.027`), and documents the exact unidentifiable boundary on single-node slow local events (`−55.0 pp`).
+
+<p align="center">
+  <a href="https://github.com/Sver0411/TAIS/blob/main/docs/PHASE5_5_HW_TRACE_AND_C11_ZH.md">
+    <img src="https://raw.githubusercontent.com/Sver0411/TAIS/main/results/phase5_hw_trace/fig05_e220_hardware_trace_validation.png" width="100%" alt="TAIS Phase 5.5: Real ESP32-S3 + E220-400T22D hardware-trace validation" />
+  </a>
+  <br />
+  <a href="https://github.com/Sver0411/TAIS/blob/main/docs/PHASE6_REAL_DATA_SPATIAL_ZH.md">
+    <img src="https://raw.githubusercontent.com/Sver0411/TAIS/main/results/phase6_intel_berkeley/figures/fig02_spatial_identifiability_drift_vs_events.png" width="100%" alt="TAIS Phase 6: 54-mote Intel Berkeley causal spatial k-NN drift identifiability vs. NullSpatial negative control" />
+  </a>
+</p>
+
 **▶ IOT, EMBEDDED & EDGE AI QUESTS**
 
 | Quest | Mission | Stack |
 | --- | --- | --- |
-| [**TAIS**](https://github.com/Sver0411/TAIS) | Trust-aware closed-loop sampling, AoI-bounded transmission & regime boundary analysis | `Python` `C11` `Research` |
+| [**TAIS**](https://github.com/Sver0411/TAIS) | Trust-aware closed-loop sampling, E220 hardware-trace & 54-mote spatial drift identifiability, C11 ESP32-S3 port | `Python` `C11` `ESP32-S3` |
 | [**NetAdapt-IoT**](https://github.com/Sver0411/NetAdapt-IoT) | Multi-flow IoT gateway scheduling balancing Age of Information (AoI), deadlines and fairness | `Python` `ESP32-S3` `PlatformIO` |
 | [**EventGuard-LoRa**](https://github.com/Sver0411/EventGuard-LoRa) | Event-aware redundancy tested on ESP32-S3 and E220 Sub-GHz LoRa hardware | `Python` `ESP32-S3` `LoRa` |
 | [**AdaptiveSense**](https://github.com/Sver0411/AdaptiveSense) | Change-aware adaptive sampling with two-sided CUSUM slow-drift detection on ESP32-S3 | `Python` `C` `ESP32-S3` |
